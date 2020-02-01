@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 444}
   m_MaxSize: {x: 22008, y: 10022}
   vertical: 0
-  controlID: 132
+  controlID: 53
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 194}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 133
+  controlID: 132
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -370,8 +370,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -384,18 +384,18 @@ MonoBehaviour:
       y: 17
       width: 751
       height: 337
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 375.5, y: 168.5}
+    m_Scale: {x: 1.3876495, y: 1.3876495}
+    m_Translation: {x: 415.60098, y: 128.9881}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -375.5
-      y: -168.5
-      width: 751
-      height: 337
+      x: -299.49997
+      y: -92.95438
+      width: 541.20294
+      height: 242.8567
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -441,9 +441,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -2.15}
+    m_Target: {x: 0.5471761, y: 0.5134998, z: -0.61104846}
     speed: 2
-    m_Value: {x: 0, y: 0, z: -2.15}
+    m_Value: {x: 0.5471761, y: 0.5134998, z: -0.61104846}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -472,13 +472,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.25221422, y: 0.21832225, z: -0.058523055, w: 0.9409047}
+    m_Target: {x: 0.31355003, y: -0.5460064, z: 0.23078246, w: 0.74182636}
     speed: 2
-    m_Value: {x: 0.25221384, y: 0.2183219, z: -0.058522966, w: 0.94090325}
+    m_Value: {x: 0.30596507, y: -0.54425246, z: 0.22238174, w: 0.74881315}
   m_Size:
-    m_Target: 23.334524
+    m_Target: 4.5979066
     speed: 2
-    m_Value: 23.334524
+    m_Value: 4.2979064
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -559,23 +559,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: b8340000
+      m_LastClickedID: 13496
       m_ExpandedIDs: 76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Particle System
+        m_OriginalName: Particle System
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 13662
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -624,20 +624,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\leann\Documents\GitHub\GGJ2020\GGJ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f22e0000
-    m_LastClickedID: 12018
-    m_ExpandedIDs: 00000000f22e000000ca9a3b
+    m_SelectedIDs: 20350000
+    m_LastClickedID: 13600
+    m_ExpandedIDs: 00000000f02e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,7 +665,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f22e0000
+    m_ExpandedIDs: 00000000f02e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
