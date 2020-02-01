@@ -7,12 +7,6 @@ public class CameraMouseFollow : MonoBehaviour
     public bool showCursor;
     public float sensitivity;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -35,5 +29,8 @@ public class CameraMouseFollow : MonoBehaviour
         }
 
         float newRotationY = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivity;
+        float newRotationX = transform.localEulerAngles.x - Input.GetAxis("Mouse Y") * sensitivity;
+
+        gameObject.transform.localEulerAngles = new Vector3(newRotationX, newRotationY, 0);
     }
 }
