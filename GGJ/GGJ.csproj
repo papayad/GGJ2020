@@ -674,7 +674,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMouseFollow.cs" />
     <Compile Include="Assets\Scripts\LookForStars.cs" />
+    <Compile Include="Assets\Scripts\QuitButton.cs" />
     <Compile Include="Assets\Scripts\StarFade.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\PolygonChangeShapeWindow.uxml" />
