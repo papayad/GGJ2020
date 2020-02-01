@@ -63,7 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMouseFollow.cs" />
-    <Compile Include="Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
+    <Compile Include="Assets\Scripts\LookForStars.cs" />
+    <Compile Include="Assets\Scripts\StarFade.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Kiaz/Documents/GitHub/GGJ2020/GGJ/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
