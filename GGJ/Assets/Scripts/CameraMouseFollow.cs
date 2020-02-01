@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMouseFollow : MonoBehaviour
 {
     public bool showCursor;
-    public float sensitivity;
+    public float sensitivity; 
 
     // Update is called once per frame
     void Update()

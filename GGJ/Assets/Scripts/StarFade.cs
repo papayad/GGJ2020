@@ -4,35 +4,31 @@ using UnityEngine;
 
 public class StarFade : MonoBehaviour
 {
+    SpriteRenderer sprite;
+    public float fadeInTime;
+    Color starColor;
+    Color invisiColor = new Color(255, 255, 255, 1);
+    Color finalColor = new Color(0, 0, 255, 1);
+
     // Start is called before the first frame update
     void Start()
     {
-        MeshRenderer renderer = gameObject.GetComponent<MeshRenderer>();
-        Material material = renderer.material;
-
-        material.SetFloat("_Mode", 3f);
-
-        //0f - opacity
-        //1f - cutout
-        //2f - fade
-        //3f - transparent
-
-        Color32 col = renderer.material.GetColor("_Color");
-        col.a = 100;
-        renderer.material.SetColor("_Color", col);
-
-        material.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-        material.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-        material.SetInt("_ZWrite", 0);
-        material.DisableKeyword("_ALPHATEST_ON");
-        material.EnableKeyword("_ALPHABLEND_ON");
-        material.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-        material.renderQueue = 3000;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("r"))
+        {
+            StartCoroutine ("Slurp");
+        }
+    }
+
+    IEnumerator Slurp()
+    {
+        Debug.Log("sprite lerp = slerp");
+        sprite.color = Color.Lerp(invisiColor, finalColor, Time.deltaTime * fadeInTime);
+        yield return null;
     }
 }
