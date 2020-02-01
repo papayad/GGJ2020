@@ -7,8 +7,8 @@ public class StarFade : MonoBehaviour
     SpriteRenderer sprite;
     public float fadeInTime;
     Color starColor;
-    Color invisiColor = new Color(255, 255, 255, 1);
-    Color finalColor = new Color(0, 0, 255, 1);
+    //Color invisiColor = new Color(255, 255, 255, 1);
+    Color finalColor = new Color(255, 255, 255, 1);
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +19,12 @@ public class StarFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("r"))
-        {
-            StartCoroutine ("Slurp");
-        }
+        // accessing from LookForStars script
+        //FadeAlpha();
     }
 
-    IEnumerator Slurp()
+    public void FadeAlpha()
     {
-        Debug.Log("sprite lerp = slerp");
-        sprite.color = Color.Lerp(invisiColor, finalColor, Time.deltaTime * fadeInTime);
-        yield return null;
+        sprite.color = Color.Lerp(sprite.color, finalColor, fadeInTime);
     }
 }

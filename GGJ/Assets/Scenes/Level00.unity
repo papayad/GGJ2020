@@ -604,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca22c9ee02c3a214099736ab6467bf70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starFadeScript: {fileID: 1004064206}
 --- !u!1 &1004064202
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,8 +615,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1004064205}
   - component: {fileID: 1004064204}
-  - component: {fileID: 1004064203}
   - component: {fileID: 1004064206}
+  - component: {fileID: 1004064203}
   m_Layer: 0
   m_Name: Star (1)
   m_TagString: Star
@@ -634,8 +635,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.23780543
-  m_Center: {x: -0.038502812, y: 0.27039582, z: 0}
+  m_Radius: 2.0482311
+  m_Center: {x: 0, y: 0, z: 1.451769}
 --- !u!212 &1004064204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -693,7 +694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004064202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6, y: 7.8, z: -2.15}
+  m_LocalPosition: {x: 0.62, y: 4.87, z: -2.15}
   m_LocalScale: {x: 1.5077, y: 1.5077, z: 1.5077}
   m_Children: []
   m_Father: {fileID: 0}
@@ -711,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebd20d4d1ca4f0498b5ca547f7f413a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeInTime: 10
+  fadeInTime: 0.1
 --- !u!1 &1041053157
 GameObject:
   m_ObjectHideFlags: 0
