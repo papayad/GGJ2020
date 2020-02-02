@@ -1,17 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LookForStars : MonoBehaviour
 {
     public StarFade starFadeScript;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        //sprite = GetComponent<SpriteRenderer>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -26,15 +20,23 @@ public class LookForStars : MonoBehaviour
                 Debug.Log("Found a star");
                 //sprite.color = Color.Lerp(sprite.color, finalColor, fadeInTime);
                 starFadeScript.FadeAlpha();
+                StartCoroutine("LoadNextScene");
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             Debug.Log("Did Hit");
         }
-        //}
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
             Debug.Log("Did not Hit");
         }
+    }
+
+    IEnumerator LoadNextScene()
+    {
+        Debug.Log("IEnumberator LoadNextScene");
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        yield return null;
     }
 }
