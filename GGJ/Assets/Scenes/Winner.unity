@@ -147,15 +147,15 @@ RectTransform:
   m_GameObject: {fileID: 192191698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0944314, y: 2.0944314, z: 2.0944314}
   m_Children: []
   m_Father: {fileID: 1824455771}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333.6, y: -127.5}
-  m_SizeDelta: {x: 160, y: 138.2}
+  m_AnchoredPosition: {x: -19, y: 108.53}
+  m_SizeDelta: {x: 839.6, y: 167.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192191700
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1c6aa808f782f494b9d5e08c9f5c7f7f, type: 3}
-    m_FontSize: 108
+    m_FontSize: 43
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -190,7 +190,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YAY
+  m_Text: 'Thank you for saving us!
+
+
+    (Click anywhere to'
 --- !u!222 &192191701
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -210,6 +213,7 @@ GameObject:
   - component: {fileID: 600213403}
   - component: {fileID: 600213402}
   - component: {fileID: 600213401}
+  - component: {fileID: 600213404}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -282,6 +286,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &600213404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600213400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c03e8eb8262d48228c57a2b69295d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1481346955
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,14 +416,14 @@ RectTransform:
   m_GameObject: {fileID: 1724620149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0941, y: 1.0941, z: 1.0941}
+  m_LocalScale: {x: 2.2915173, y: 2.2915173, z: 2.2915173}
   m_Children: []
   m_Father: {fileID: 1824455771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 8}
+  m_AnchoredPosition: {x: 9.902588, y: 8}
   m_SizeDelta: {x: 832, y: 468}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724620151

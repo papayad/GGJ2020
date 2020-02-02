@@ -30,19 +30,37 @@ public class LookForStars : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
 
+    public GameObject moontext1;
+    public GameObject moontext2;
+    public GameObject moontext3;
+
     public GameObject sparklep1;
+    public GameObject sparklep2;
+    public GameObject sparklep3;
 
     public Image blackScreen;
 
     public bool fading;
 
+    public Text mooncountp1;
+    public Text mooncountp2;
+    public Text mooncountp3;
+
+
     private void Awake()
     {
         sparklep1.SetActive(false);
+        sparklep2.SetActive(false);
+        sparklep3.SetActive(false);
 
         text1.SetActive(false);
         text2.SetActive(false);
         text3.SetActive(false);
+
+        moontext1.SetActive(false);
+        moontext2.SetActive(false);
+        moontext3.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -74,6 +92,7 @@ public class LookForStars : MonoBehaviour
                 starFadeScriptPlanet1.FadeAlpha();
                 sparklep1.SetActive(true);
                 text1.SetActive(true);
+                moontext1.SetActive(true);
             }
             else
             {
@@ -85,7 +104,9 @@ public class LookForStars : MonoBehaviour
                 Debug.Log("Found a planet");
                 planet2 = true;
                 starFadeScriptPlanet2.FadeAlpha();
+                sparklep2.SetActive(true);
                 text2.SetActive(true);
+                moontext2.SetActive(true);
             }
             else
             {
@@ -98,7 +119,9 @@ public class LookForStars : MonoBehaviour
                 planet3 = true;
                 Debug.Log(planet3);
                 text3.SetActive(true);
+                sparklep3.SetActive(true);
                 starFadeScriptPlanet3.FadeAlpha();
+                moontext3.SetActive(true);
             }
             else
             {
@@ -139,7 +162,11 @@ public class LookForStars : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
         }
 
-        if (planet1 == true && planet2 == true && planet3 == true && moonAmountP1 == 3 && moonAmountP2 == 1 && moonAmountP3 == 1)
+        mooncountp1.text = "0" + moonAmountP1;
+        mooncountp2.text = "0" + moonAmountP2;
+        mooncountp3.text = "0" + moonAmountP3;
+
+        if (planet1 == true && planet2 == true && planet3 == true && moonAmountP1 == 3 && moonAmountP2 == 3 && moonAmountP3 == 2)
         {
             fading = true;
             StartCoroutine("LoadNextScene");
