@@ -13,9 +13,9 @@ public class LookForStars : MonoBehaviour
     bool planet2;
     bool planet3;
 
-    public int moonAmountP1;
-    public int moonAmountP2;
-    public int moonAmountP3;
+    public static int moonAmountP1;
+    public static int moonAmountP2;
+    public static int moonAmountP3;
 
     public SparkleSounds sparkleSoundsScript;
 
@@ -29,9 +29,13 @@ public class LookForStars : MonoBehaviour
     public GameObject text2;
     public GameObject text3;
 
+    public GameObject sparklep1;
+
 
     private void Awake()
     {
+        sparklep1.SetActive(false);
+
         text1.SetActive(false);
         text2.SetActive(false);
         text3.SetActive(false);
@@ -56,16 +60,19 @@ public class LookForStars : MonoBehaviour
 
             if (hit.collider.tag == "Planet1")
             {
+                sparkleSoundsScript.PlaySparkles();
                 Debug.Log("Found a planet");
                 planet1 = true;
                 //Debug.Log(planet1);
                 ////sprite.color = Color.Lerp(sprite.color, finalColor, fadeInTime);
                 starFadeScriptPlanet1.FadeAlpha();
                 //StartCoroutine("LoadNextScene");
+                sparklep1.SetActive(true);
                 text1.SetActive(true);
             }
             if (hit.collider.tag == "Planet2")
             {
+                sparkleSoundsScript.PlaySparkles();
                 Debug.Log("Found a planet");
                 planet2 = true;
                 starFadeScriptPlanet2.FadeAlpha();
@@ -74,6 +81,7 @@ public class LookForStars : MonoBehaviour
             }
             if (hit.collider.tag == "Planet3")
             {
+                sparkleSoundsScript.PlaySparkles();
                 Debug.Log("Found a planet");
                 planet3 = true;
                 Debug.Log(planet3);
@@ -90,19 +98,19 @@ public class LookForStars : MonoBehaviour
                 if (hit.collider.tag == "Planet1")
                 {
                     Debug.Log("p1 moons; " + moonAmountP1);
-                    Instantiate(moonPF, moonSpawner1.position, moonSpawner1.rotation);
+                    Instantiate(moonPF, new Vector3(moonSpawner1.position.x + Random.Range(0, 10f),0, moonSpawner1.position.z + Random.Range(0,10)) , moonSpawner1.rotation);
                     moonAmountP1 += 1;
                 }
                 if (hit.collider.tag == "Planet2")
                 {
                     Debug.Log("p2 moons; " + moonAmountP2);
-                    Instantiate(moonPF, moonSpawner2.position, moonSpawner2.rotation);
+                    Instantiate(moonPF, new Vector3(moonSpawner2.position.x + Random.Range(0, 3f), moonSpawner2.position.x + Random.Range(-5, 0f), moonSpawner2.position.z + Random.Range(0,2)), moonSpawner2.rotation);
                     moonAmountP2 += 1;
                 }
                 if (hit.collider.tag == "Planet3")
                 {
                     Debug.Log("" + moonAmountP3);
-                    Instantiate(moonPF, moonSpawner3.position, moonSpawner3.rotation);
+                    Instantiate(moonPF,new Vector3( moonSpawner3.position.x + Random.Range(-10, 10f), moonSpawner3.position.y, moonSpawner3.position.z), moonSpawner3.rotation);
                     moonAmountP3 += 1;
                 }
             }
