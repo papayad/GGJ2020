@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 422}
   m_MaxSize: {x: 22008, y: 10000}
   vertical: 0
-  controlID: 14511
+  controlID: 1701
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 422}
   m_MaxSize: {x: 4002, y: 8022}
   vertical: 1
-  controlID: 14542
+  controlID: 1582
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 194}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 14414
+  controlID: 1731
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -441,9 +441,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.9851356, y: 11.298553, z: -16.350208}
+    m_Target: {x: 288.1378, y: 171.66049, z: 258.42865}
     speed: 2
-    m_Value: {x: -5.9851356, y: 11.298553, z: -16.350208}
+    m_Value: {x: 288.1378, y: 171.66049, z: 258.42865}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -472,13 +472,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.10082956, y: 0.26611924, z: -0.028708871, w: -0.9582538}
+    m_Target: {x: 0.049313817, y: -0.06339014, z: -0.0038160789, w: -0.9967934}
     speed: 2
-    m_Value: {x: -0.09938907, y: 0.26615396, z: -0.028308759, w: -0.9583749}
+    m_Value: {x: 0.049313817, y: -0.06339014, z: -0.0038160789, w: -0.9967934}
   m_Size:
-    m_Target: 37.752647
+    m_Target: 2267.5935
     speed: 2
-    m_Value: 37.752617
+    m_Value: 2062.6677
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -561,7 +561,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 369affff1c9bffff829fffffa0a0ffff36b5ffff6cb6ffff56b8ffff02b9ffff00bcffffd0bcfffff2faffff76fbffff5a3600006a6e00009e820000
+      m_ExpandedIDs: baf5ffffdaf9ffff18faffff4afaffff74faffffaafaffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -624,20 +624,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/pamelabiancapayad/Documents/GitHub/GGJ2020/GGJ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 202f0000
-    m_LastClickedID: 12064
-    m_ExpandedIDs: 00000000062f000000ca9a3b
+    m_SelectedIDs: 0e330000
+    m_LastClickedID: 13070
+    m_ExpandedIDs: 00000000082f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,7 +665,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000062f000000ca9a3b
+    m_ExpandedIDs: 00000000082f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -709,7 +709,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0

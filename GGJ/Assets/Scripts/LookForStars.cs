@@ -126,6 +126,7 @@ public class LookForStars : MonoBehaviour
 
         if (planet1 == true && planet2 == true && planet3 == true && moonAmountP1 == 3 && moonAmountP2 == 1 && moonAmountP3 == 1)
         {
+            SceneManager.LoadScene(3);
             Debug.Log("winer");
         }
     }
