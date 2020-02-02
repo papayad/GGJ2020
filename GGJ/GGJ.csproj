@@ -673,8 +673,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMouseFollow.cs" />
+    <Compile Include="Assets\Scripts\KeepPlaying.cs" />
     <Compile Include="Assets\Scripts\LookForStars.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\QuitButton.cs" />
+    <Compile Include="Assets\Scripts\SparkleSounds.cs" />
     <Compile Include="Assets\Scripts\StarFade.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>

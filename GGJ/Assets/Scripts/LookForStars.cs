@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LookForStars : MonoBehaviour
 {
     public StarFade starFadeScript;
+    public SparkleSounds sparkleSoundsScript;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +21,7 @@ public class LookForStars : MonoBehaviour
                 Debug.Log("Found a star");
                 //sprite.color = Color.Lerp(sprite.color, finalColor, fadeInTime);
                 starFadeScript.FadeAlpha();
+                sparkleSoundsScript.PlaySparkles();
                 StartCoroutine("LoadNextScene");
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
