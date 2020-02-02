@@ -10,7 +10,7 @@ public class Barks : MonoBehaviour
     private int currentIndex = 0;
 
     float elapsedTime = 0f; // Counts up to repeatTime
-    float repeatTime = 10f; // Time taken to repeat in seconds
+    float repeatTime = 6f; // Time taken to repeat in seconds
 
     void Start()
     {
