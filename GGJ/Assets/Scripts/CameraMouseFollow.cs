@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CameraMouseFollow : MonoBehaviour
 {
-    public bool showCursor;
+    public bool showCursor = false;
     public float sensitivity;
 
     void Start()
     {
-        showCursor = false;
+        //showCursor = false;
     }
 
     // Update is called once per frame
@@ -25,5 +25,13 @@ public class CameraMouseFollow : MonoBehaviour
         float newRotationX = transform.localEulerAngles.x - Input.GetAxis("Mouse Y") * sensitivity;
 
         gameObject.transform.localEulerAngles = new Vector3(newRotationX, newRotationY, 0);
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            showCursor = true;
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }
