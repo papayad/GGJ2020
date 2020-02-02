@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{057079C0-A49F-1AF7-578C-B15EB585F1AB}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LookForStars.cs">
+    <Files>
+      <File FileName="Assets/Scripts/LookForStars.cs" Line="122" Column="10" />
+      <File FileName="Assets/Scripts/Destroy.cs" Line="13" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GGJ" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="LookForStars.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8680a22a-77dd-4bac-a4e2-6155d9df07f1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
