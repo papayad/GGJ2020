@@ -672,6 +672,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Barks.cs" />
     <Compile Include="Assets\Scripts\CameraMouseFollow.cs" />
     <Compile Include="Assets\Scripts\KeepPlaying.cs" />
     <Compile Include="Assets\Scripts\LookForStars.cs" />
